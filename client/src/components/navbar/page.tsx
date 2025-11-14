@@ -22,12 +22,12 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="relative h-10 w-10">
+            <div className="relative h-10 w-10 rounded-full ">
               <Image
-                src="/logo.png"
+                src="/images/logo.png"
                 alt="Wangui Logo"
                 fill
-                className="object-contain"
+                className="object-contain rounded-full"
                 priority
               />
             </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 hover:text-emerald-600 font-medium transition"
+                className="text-gray-700 hover:text-purple-600 font-medium transition"
               >
                 {link.name}
               </Link>
@@ -52,13 +52,13 @@ export default function Navbar() {
             <div className="flex items-center space-x-3 ml-6 pl-6 border-l border-gray-200">
               <Link
                 href="/login"
-                className="text-gray-700 hover:text-emerald-600 font-medium transition"
+                className="text-gray-700 bg-[] hover:text-purple-600 font-medium transition"
               >
                 Login
               </Link>
               <Link
                 href="/signup"
-                className="bg-emerald-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-emerald-700 transition"
+                className="bg-[#f59e0b] text-white px-5 py-2 rounded-lg font-medium hover:bg-purple-700 transition"
               >
                 Sign Up
               </Link>
@@ -87,7 +87,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50 hover:text-emerald-600"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-amber-50 hover:text-amber-600"
                 >
                   {link.name}
                 </Link>
@@ -97,14 +97,14 @@ export default function Navbar() {
                 <Link
                   href="/login"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-golden-50"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-amber-50"
                 >
                   Login
                 </Link>
                 <Link
                   href="/signup"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block px-3 py-2 mt-2 bg-purple-600 text-white text-center rounded-full font-medium hover:bg-purple-700"
+                  className="block px-3 py-2 mt-2 bg-[#f59e0b] text-white text-center rounded-full font-medium hover:bg-purple-700"
                 >
                   Sign Up
                 </Link>
