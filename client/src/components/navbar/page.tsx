@@ -32,7 +32,7 @@ export default function Navbar() {
               />
             </div>
             <span className="font-['Playfair_Display'] text-xl md:text-2xl font-bold text-gray-800">
-              Wangui
+              Wangui Nurtures
             </span>
           </Link>
 
@@ -97,14 +97,14 @@ export default function Navbar() {
                 <Link
                   href="/login"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-emerald-50"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-golden-50"
                 >
                   Login
                 </Link>
                 <Link
                   href="/signup"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block px-3 py-2 mt-2 bg-emerald-600 text-white text-center rounded-lg font-medium hover:bg-emerald-700"
+                  className="block px-3 py-2 mt-2 bg-purple-600 text-white text-center rounded-full font-medium hover:bg-purple-700"
                 >
                   Sign Up
                 </Link>

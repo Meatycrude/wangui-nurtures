@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <Leaf className="h-7 w-7 text-emerald-400" />
               <span className="font-['Playfair_Display'] text-xl font-bold text-white">
-                Wangui
+                Wangui Nurtures
               </span>
             </div>
             <p className="mt-3 text-sm">
@@ -51,15 +51,17 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-emerald-400" />
-                <a href="mailto:hello@wangui.org">hello@wangui.org</a>
+                <a href="mailto:wanguinurtures8@gmail.com">
+                  wanguinurtures8@gmail.com
+                </a>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-emerald-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>+254 796 257636</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-emerald-400" />
-                <span>Nairobi, Kenya</span>
+                <span>Kisii, Kenya</span>
               </li>
             </ul>
           </div>
