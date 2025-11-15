@@ -20,11 +20,13 @@ export default function AboutSection() {
           {/* Text */}
           <div>
             <h2 className="font-['Playfair_Display'] text-3xl md:text-5xl font-bold text-gray-900">
-              About Wangui
+              About Wangui Nurtures
             </h2>
             <p className="mt-6 text-lg text-gray-600">
-              Founded with love and empathy, <strong>Wangui</strong> is more
-              than an organization — it’s a movement to make mental health care{" "}
+              Founded with love and empathy by{" "}
+              <strong>Wangui Nancy Kairo</strong> a counselling psychologist,
+              Wangui Nurtures is more than an organization ,it’s a movement to
+              make mental health care{" "}
               <em>accessible, stigma-free, and deeply human</em>.
             </p>
             <p className="mt-4 text-lg text-gray-600">
@@ -36,7 +38,7 @@ export default function AboutSection() {
             <div className="mt-8 grid grid-cols-1 gap-6">
               {values.map((v, i) => (
                 <div key={i} className="flex items-start space-x-3">
-                  <v.icon className="h-7 w-7 text-emerald-600 flex-shrink-0 mt-1" />
+                  <v.icon className="h-7 w-7 text-purple-600 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-gray-800">{v.title}</h3>
                     <p className="text-gray-600">{v.desc}</p>
@@ -46,13 +48,13 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Image placeholder – replace with real photo */}
+          {/* Image placeholder  */}
           <div className="relative h-96 md:h-full rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/images/about-team.jpg"
+              src="/images/download.png"
               alt="Wangui team"
               fill
-              className="object-cover"
+              className="object-contain"
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/OhPZwAJJAPr6QAAAABJRU5ErkJggg=="
             />
