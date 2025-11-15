@@ -34,19 +34,19 @@ export default function AboutPage() {
 
   const timeline = [
     {
-      year: "2018",
-      event: "Wangui Nancy Kaori begins private practice in Nairobi",
+      year: "2023",
+      event: "Wangui Nancy Kaori begins private practice in Kisii university",
     },
     {
-      year: "2020",
-      event: "Launches free community mental health workshops during COVID-19",
-    },
-    {
-      year: "2022",
-      event: "Wangui Nurtures officially founded as a registered organization",
+      year: "2023",
+      event: "Launches free community mental health workshops",
     },
     {
       year: "2024",
+      event: "Wangui Nurtures officially founded as a registered organization",
+    },
+    {
+      year: "2025",
       event: "Expands to online therapy and group support programs",
     },
     {
@@ -80,8 +80,8 @@ export default function AboutPage() {
             <div className="relative">
               <div className="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/founder/wangui-kaori.jpg"
-                  alt="Wangui Nancy Kaori - Founder"
+                  src="/images/wangui.png"
+                  alt="Wangui Nancy Kairo - Founder"
                   fill
                   className="object-cover"
                   placeholder="blur"
@@ -99,26 +99,26 @@ export default function AboutPage() {
                 Meet the Founder
               </h2>
               <h3 className="mt-2 text-xl font-semibold text-purple-700">
-                Wangui Nancy Kaori
+                Wangui Nancy Kairo
               </h3>
               <p className="mt-1 text-amber-700 font-medium">
                 Counselling Psychologist • MSc, KCPA Reg.
               </p>
 
               <p className="mt-6 text-gray-700 leading-relaxed">
-                Wangui Nancy Kaori is a licensed counselling psychologist with
-                over <strong>7 years</strong> of experience helping individuals,
+                Wangui Nancy Kairo is a licensed counselling psychologist with
+                over <strong>3 years</strong> of experience helping individuals,
                 couples, and families navigate life’s toughest moments. She
-                holds a <strong>Master’s in Counselling Psychology</strong> and
-                is a registered member of the Kenya Counselling and
-                Psychological Association (KCPA).
+                holds a <strong>Degree in Counselling Psychology</strong> and is
+                a registered member of the Kenya Counselling and Psychological
+                Association (KCPA).
               </p>
 
               <p className="mt-4 text-gray-700 leading-relaxed">
                 Driven by her own journey through grief and resilience, Wangui
                 founded <strong>Wangui Nurtures</strong> to make professional
                 mental health support{" "}
-                <em>accessible, stigma-free, and deeply human</em> — especially
+                <em>accessible, stigma-free, and deeply human</em> especially
                 for underserved communities in Kenya.
               </p>
 
@@ -128,15 +128,15 @@ export default function AboutPage() {
                   damage no longer controls our lives.”
                 </p>
                 <footer className="mt-3 text-amber-700 font-medium">
-                  — Wangui Nancy Kaori
+                  Wangui Nancy Kairo
                 </footer>
               </blockquote>
 
               <button
                 onClick={() =>
-                  router.push("/services?therapist=Wangui Nancy Kaori")
+                  router.push("/services?therapist=Wangui Nancy Kairo")
                 }
-                className="mt-8 bg-gradient-to-r from-purple-700 to-amber-700 text-white font-bold py-3 px-6 rounded-lg hover:from-purple-800 hover:to-amber-800 transition flex items-center gap-2"
+                className="mt-8 bg-[gold] text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-800  transition flex items-center gap-2"
               >
                 <Calendar className="w-5 h-5" />
                 Book with Wangui
@@ -201,7 +201,7 @@ export default function AboutPage() {
       </section>
 
       {/* Journey Timeline */}
-      <section className="py-16 bg-black text-white">
+      <section className="py-16 bg-slate-300 text-black">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-center text-3xl md:text-4xl font-bold font-['Playfair_Display'] mb-12">
             Our Journey
@@ -209,11 +209,11 @@ export default function AboutPage() {
           <div className="space-y-8">
             {timeline.map((item, i) => (
               <div key={i} className="flex items-center gap-6">
-                <div className="flex-shrink-0 w-20 text-amber-500 font-bold text-lg">
+                <div className="flex-shrink-0 w-20 text-purple-500 font-bold text-lg">
                   {item.year}
                 </div>
-                <div className="flex-1 bg-gradient-to-r from-purple-700/20 to-amber-700/20 p-4 rounded-lg backdrop-blur-sm">
-                  <p className="text-white">{item.event}</p>
+                <div className="flex-1 bg-[white] p-4 rounded-lg backdrop-blur-sm">
+                  <p className="text-black">{item.event}</p>
                 </div>
               </div>
             ))}
