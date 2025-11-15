@@ -2,21 +2,37 @@ import Navbar from "@/components/navbar/page";
 import Footer from "@/components/footer/page";
 import Link from "next/link";
 
-export default function LoginPage() {
+export default function SignupPage() {
   return (
     <>
       <Navbar />
 
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-100  to-amber-100 py-16 px-4">
+      <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-100  to-purple-100 py-16 px-4">
         <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8">
           <h1 className="text-3xl font-bold text-center text-gray-800 font-['Playfair_Display']">
-            Welcome Back
+            Join Wangui Nurtures
           </h1>
           <p className="mt-2 text-center text-gray-600">
-            Log in to access your personal wellness dashboard.
+            Create your account and start your wellness journey.
           </p>
 
           <form className="mt-8 space-y-6">
+            <div>
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Full Name
+              </label>
+              <input
+                id="name"
+                type="text"
+                required
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-emerald-500 focus:border-emerald-500"
+                placeholder="Wangui kairo"
+              />
+            </div>
+
             <div>
               <label
                 htmlFor="email"
@@ -28,7 +44,7 @@ export default function LoginPage() {
                 id="email"
                 type="email"
                 required
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500"
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-emerald-500 focus:border-emerald-500"
                 placeholder="wanguinurtures@gmail.com"
               />
             </div>
@@ -49,37 +65,21 @@ export default function LoginPage() {
               />
             </div>
 
-            <div className="flex items-center justify-between">
-              <label className="flex items-center">
-                <input
-                  type="checkbox"
-                  className="h-4 w-4 text-emerald-600 rounded"
-                />
-                <span className="ml-2 text-sm text-gray-600">Remember me</span>
-              </label>
-              <Link
-                href="/forgot-password"
-                className="text-sm text-[gold] hover:underline"
-              >
-                Forgot password?
-              </Link>
-            </div>
-
             <button
               type="submit"
               className="w-full py-3 bg-[gold] text-white font-semibold rounded-lg hover:bg-purple-700 transition"
             >
-              Sign In
+              Create Account
             </button>
           </form>
 
           <p className="mt-6 text-center text-sm text-gray-600">
-            Don’t have an account?{" "}
+            Already have an account?{" "}
             <Link
-              href="/signup"
+              href="/login"
               className="font-medium text-purple-700 hover:underline"
             >
-              Sign up
+              Log in
             </Link>
           </p>
         </div>

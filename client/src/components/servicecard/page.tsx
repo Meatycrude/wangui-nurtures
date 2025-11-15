@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Sarah M.",
     role: "Client",
-    text: "Wangui gave me a safe space to finally talk about my anxiety. I feel seen and understood for the first time.",
+    text: "Wangui Nurtures  gave me a safe space to finally talk about my anxiety. I feel seen and understood for the first time.",
     rating: 5,
   },
   {
@@ -24,7 +24,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-16 md:py-24 bg-emerald-50">
+    <section className="py-16 md:py-24 bg-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center font-['Playfair_Display'] text-3xl md:text-5xl font-bold text-gray-900">
           What People Say
@@ -39,8 +39,8 @@ export default function Testimonials() {
               key={i}
               className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition flex flex-col"
             >
-              <Quote className="h-8 w-8 text-emerald-600 mb-4" />
-              <p className="flex-1 text-gray-700 italic">
+              <Quote className="h-8 w-8 text-[black] mb-4" />
+              <p className="flex-1 text-purple-700 italic">
                 &quot;{t.text}&quot;
               </p>
               <div className="mt-4 flex items-center justify-between">

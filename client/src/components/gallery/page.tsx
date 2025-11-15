@@ -18,7 +18,9 @@ export default function Gallery() {
           Moments of Healing
         </h2>
         <p className="mt-4 text-center text-lg text-gray-600 max-w-2xl mx-auto">
-          Real glimpses into the safe, supportive spaces we create.
+          Real glimpses into the <span className="text-[gold]">S</span>afe,
+          <span className="text-[gold]">S</span>upportive{" "}
+          <span className="text-[gold]">S</span>paces we create.
         </p>
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -32,7 +34,7 @@ export default function Gallery() {
                 alt={img.alt}
                 width={600}
                 height={400}
-                className="object-cover w-full h-64 group-hover:scale-105 transition-transform duration-300"
+                className="object-contain w-full h-64 group-hover:scale-105 transition-transform duration-300"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/OhPZwAJJAPr6QAAAABJRU5ErkJggg=="
               />

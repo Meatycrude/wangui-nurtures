@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center space-x-2">
-              <Leaf className="h-7 w-7 text-emerald-400" />
+              <Leaf className="h-7 w-7 text-[gold]" />
               <span className="font-['Playfair_Display'] text-xl font-bold text-white">
                 Wangui Nurtures
               </span>
@@ -36,7 +36,7 @@ export default function Footer() {
                 <li key={item}>
                   <Link
                     href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                    className="hover:text-emerald-400 transition"
+                    className="hover:text-purple-400 transition"
                   >
                     {item}
                   </Link>
@@ -50,17 +50,17 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 text-emerald-400" />
+                <Mail className="h-4 w-4 text-[gold]" />
                 <a href="mailto:wanguinurtures8@gmail.com">
                   wanguinurtures8@gmail.com
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 text-emerald-400" />
+                <Phone className="h-4 w-4 text-[gold]" />
                 <span>+254 796 257636</span>
               </li>
               <li className="flex items-center space-x-2">
-                <MapPin className="h-4 w-4 text-emerald-400" />
+                <MapPin className="h-4 w-4 text-[gold]" />
                 <span>Kisii, Kenya</span>
               </li>
             </ul>
