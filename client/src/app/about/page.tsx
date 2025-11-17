@@ -80,7 +80,7 @@ export default function AboutPage() {
 
             <div className=" relative  h-96 md:h-full rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/images/download.png"
+                src="/images/wangui.png"
                 alt="Wangui team"
                 fill
                 className="object-contain"
