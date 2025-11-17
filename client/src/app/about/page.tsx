@@ -77,20 +77,16 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Photo */}
-            <div className="relative">
-              <div className="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/images/wangui.png"
-                  alt="Wangui Nancy Kairo - Founder"
-                  fill
-                  className="object-cover"
-                  placeholder="blur"
-                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/OhPZwAJJAPr6QAAAABJRU5ErkJggg=="
-                />
-              </div>
-              <div className="absolute -bottom-4 -right-4 bg-gradient-to-br from-purple-700 to-amber-700 text-white p-4 rounded-xl shadow-lg">
-                <Quote className="w-6 h-6" />
-              </div>
+
+            <div className=" relative  h-96 md:h-full rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/download.png"
+                alt="Wangui team"
+                fill
+                className="object-contain"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/OhPZwAJJAPr6QAAAABJRU5ErkJggg=="
+              />
             </div>
 
             {/* Bio */}
