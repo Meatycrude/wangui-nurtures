@@ -21,14 +21,14 @@ const services = [
     title: "Individual Therapy",
     desc: "One-on-one sessions with a licensed therapist to address personal challenges.",
     duration: "50 mins",
-    price: "KES 3,500",
+    price: "KES 2,500",
     icon: User,
   },
   {
     title: "Couples Counseling",
     desc: "Strengthen your relationship with guided communication and conflict resolution.",
     duration: "75 mins",
-    price: "KES 5,000",
+    price: "KES 3,500",
     icon: Heart,
   },
   {
@@ -241,7 +241,7 @@ export default function ServicesPage() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  placeholder="Jane Doe"
+                  placeholder="wangui kairo"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600"
                 />
               </div>

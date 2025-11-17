@@ -14,8 +14,10 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/navbar/page";
 import Footer from "@/components/footer/page";
+import { useRouter } from "next/navigation";
 
 export default function ContactPage() {
+  const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -53,13 +55,13 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-black text-white py-20">
+      <section className="bg-slate-300 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="font-['Playfair_Display'] text-4xl md:text-6xl font-bold">
             Get in Touch
           </h1>
-          <p className="mt-4 text-lg text-amber-200 max-w-2xl mx-auto">
-            We’re here when you’re ready to talk — no pressure, just support.
+          <p className="mt-4 text-lg text-[black] max-w-2xl mx-auto">
+            We’re here when you’re ready to talk no pressure, just support.
           </p>
         </div>
       </section>
@@ -95,7 +97,12 @@ export default function ContactPage() {
                   sharing & resources
                 </li>
               </ul>
-              <button className="mt-8 bg-purple-700 text-white px-7 py-3 rounded-lg font-bold hover:bg-purple-800 transition flex items-center gap-2">
+              <button
+                onClick={() =>
+                  router.push("/services?therapist=Wangui Nancy Kairo")
+                }
+                className="mt-8 bg-purple-700 text-white px-7 py-3 rounded-lg font-bold hover:bg-purple-800 transition flex items-center gap-2"
+              >
                 Start Video Session <ChevronRight className="w-5 h-5" />
               </button>
             </div>
@@ -124,7 +131,12 @@ export default function ContactPage() {
                     <div className="absolute w-32 h-32 border-4 border-amber-700 rounded-full animate-ping delay-300 opacity-30"></div>
                   </div>
                 </div>
-                <p className="text-center mt-6 text-amber-700 font-medium">
+                <p
+                  onClick={() =>
+                    router.push("/services?therapist=Wangui Nancy Kairo")
+                  }
+                  className="text-center mt-6 text-amber-700 font-medium"
+                >
                   Secure Audio Call
                 </p>
               </div>
@@ -265,7 +277,7 @@ export default function ContactPage() {
                     href="tel:+254700000000"
                     className="text-amber-700 hover:underline text-lg"
                   >
-                    +254 700 000 000
+                    +254 796 257636
                   </a>
                 </div>
               </div>
@@ -277,9 +289,8 @@ export default function ContactPage() {
                 <div>
                   <p className="font-bold text-black">Location</p>
                   <p className="text-gray-700">
-                    Westlands, Nairobi
+                    Kisii, Kenya
                     <br />
-                    Kenya Wellness Center, 3rd Floor
                   </p>
                 </div>
               </div>
@@ -304,7 +315,7 @@ export default function ContactPage() {
 
               <div className="mt-10 p-6 bg-gradient-to-r from-purple-700 to-amber-700 rounded-xl text-white">
                 <p className="font-bold text-xl">Crisis? Call immediately</p>
-                <p className="text-2xl font-bold mt-2">+254 711 999 111</p>
+                <p className="text-2xl font-bold mt-2">+254 796 257636</p>
               </div>
             </div>
           </div>
