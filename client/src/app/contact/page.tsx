@@ -13,10 +13,12 @@ import {
   AlertCircle,
   ChevronRight,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 import Navbar from "@/components/navbar/page";
 import Footer from "@/components/footer/page";
 
 export default function ContactPage() {
+  const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -56,13 +58,13 @@ export default function ContactPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-black text-white py-20">
+      <section className="bg-slate-300 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="font-['Playfair_Display'] text-4xl md:text-6xl font-bold">
             Get in Touch
           </h1>
-          <p className="mt-4 text-lg text-amber-200 max-w-2xl mx-auto">
-            Whether you need support, have questions, or want to partner — we’re
+          <p className="mt-4 text-lg text-[black] max-w-2xl mx-auto">
+            Whether you need support, have questions, or want to partner we’re
             here.
           </p>
         </div>
@@ -97,7 +99,12 @@ export default function ContactPage() {
                   Share screen, files, or worksheets
                 </li>
               </ul>
-              <button className="mt-8 bg-purple-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-800 transition flex items-center gap-2">
+              <button
+                onClick={() =>
+                  router.push("/services?therapist=Wangui Nancy Kairo")
+                }
+                className="mt-8 bg-purple-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-800 transition flex items-center gap-2"
+              >
                 Start Video Session <ChevronRight className="w-5 h-5" />
               </button>
             </div>
@@ -175,7 +182,12 @@ export default function ContactPage() {
                   Same therapists, same quality
                 </li>
               </ul>
-              <button className="mt-8 bg-amber-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-amber-800 transition flex items-center gap-2">
+              <button
+                onClick={() =>
+                  router.push("/services?therapist=Wangui Nancy Kairo")
+                }
+                className="mt-8 bg-amber-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-amber-800 transition flex items-center gap-2"
+              >
                 Start Audio Session <ChevronRight className="w-5 h-5" />
               </button>
             </div>
@@ -216,7 +228,7 @@ export default function ContactPage() {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-700"
-                    placeholder="you@example.com"
+                    placeholder="wangui@example.com"
                   />
                 </div>
                 <div>
@@ -303,10 +315,10 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-black">Call or WhatsApp</p>
                     <a
-                      href="tel:+254700000000"
+                      href="tel:+2547"
                       className="text-amber-700 hover:underline"
                     >
-                      +254 700 000 000
+                      +254 796 257 636
                     </a>
                   </div>
                 </div>
@@ -318,9 +330,9 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-black">Visit Us</p>
                     <p className="text-gray-700">
-                      Westlands, Nairobi
+                      Kisii, kenya
                       <br />
-                      Kenya Wellness Center, 3rd Floor
+                      P.O. Box 123-40200
                     </p>
                   </div>
                 </div>
@@ -347,7 +359,7 @@ export default function ContactPage() {
               <div className="mt-8 p-6 bg-gradient-to-r from-purple-700 to-amber-700 rounded-xl text-white">
                 <p className="font-bold text-lg">Need help now?</p>
                 <p className="mt-2">
-                  Call our 24/7 crisis line: <strong>+254 711 999 111</strong>
+                  Call our 24/7 crisis line: <strong>+254 796 257 636</strong>
                 </p>
               </div>
             </div>
