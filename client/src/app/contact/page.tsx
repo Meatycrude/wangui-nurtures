@@ -23,11 +23,13 @@ export default function ContactPage() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  {
+    /*
   const [status, setStatus] = useState<
     "idle" | "sending" | "success" | "error"
   >("idle");
 
-  const handleSubmit = async (e: React.FormEvent) => {
+ const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
 
@@ -52,6 +54,8 @@ export default function ContactPage() {
       setStatus("error");
     }
   };
+  */
+  }
 
   return (
     <>
@@ -204,7 +208,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-bold text-black mb-6">
                 Send Us a Message
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form className="space-y-5">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
                     Name
