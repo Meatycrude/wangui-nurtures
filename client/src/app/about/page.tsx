@@ -35,7 +35,7 @@ export default function AboutPage() {
   const timeline = [
     {
       year: "2023",
-      event: "Wangui Nancy Kaori begins private practice in Kisii university",
+      event: "Wangui Kairo begins private practice in Kisii university",
     },
     {
       year: "2023",
@@ -102,8 +102,8 @@ export default function AboutPage() {
               </p>
 
               <p className="mt-6 text-gray-700 leading-relaxed">
-                Wangui Nancy Kairo is a licensed counselling psychologist with
-                over <strong>3 years</strong> of experience helping individuals,
+                Wangui Kairo is a licensed counselling psychologist with over{" "}
+                <strong>3 years</strong> of experience helping individuals,
                 couples, and families navigate life’s toughest moments. She
                 holds a <strong>Degree in Counselling Psychology</strong> and is
                 a registered member of the Kenya Counselling and Psychological
@@ -124,7 +124,7 @@ export default function AboutPage() {
                   damage no longer controls our lives.”
                 </p>
                 <footer className="mt-3 text-amber-700 font-medium">
-                  Wangui Nancy Kairo
+                  Wangui Kairo
                 </footer>
               </blockquote>
 
