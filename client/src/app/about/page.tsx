@@ -102,11 +102,11 @@ export default function AboutPage() {
               </p>
 
               <p className="mt-6 text-gray-700 leading-relaxed">
-                Wangui Kairo is a licensed counselling psychologist with over{" "}
+                Wangui Kairo is a licensed psychologist with over{" "}
                 <strong>3 years</strong> of experience helping individuals,
                 couples, and families navigate life’s toughest moments. She
-                holds a <strong>Degree in Counselling Psychology</strong> and is
-                a registered member of the Kenya Counselling and Psychological
+                holds a <strong>Degree in Psychology</strong> and is a
+                registered member of the Kenya Counselling and Psychological
                 Association (KCPA).
               </p>
 
