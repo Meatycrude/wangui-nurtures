@@ -271,7 +271,7 @@ export default function ServicesPage() {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   required
-                  placeholder="+254115414231"
+                  placeholder="+254 796 257636"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600"
                 />
               </div>

@@ -81,7 +81,7 @@ export default function AboutPage() {
             <div className=" relative  h-96 md:h-full rounded-xl overflow-hidden shadow-lg">
               <Image
                 src="/images/wangui.png"
-                alt="Wangui team"
+                alt="wangui kairo"
                 fill
                 className="object-contain"
                 placeholder="blur"
