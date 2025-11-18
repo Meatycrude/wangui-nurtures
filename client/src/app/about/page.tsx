@@ -95,7 +95,7 @@ export default function AboutPage() {
                 Meet the Founder
               </h2>
               <h3 className="mt-2 text-xl font-semibold text-purple-700">
-                Wangui Nancy Kairo
+                Wangui Kairo
               </h3>
               <p className="mt-1 text-amber-700 font-medium">
                 Counselling Psychologist • MSc, KCPA Reg.
