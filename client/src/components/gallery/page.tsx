@@ -34,7 +34,7 @@ export default function Gallery() {
                 alt={img.alt}
                 width={600}
                 height={400}
-                className="object-contain w-full h-64 group-hover:scale-105 transition-transform duration-300"
+                className="object-cover  w-full h-64 group-hover:scale-105 transition-transform duration-300"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/OhPZwAJJAPr6QAAAABJRU5ErkJggg=="
               />
